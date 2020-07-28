@@ -1,4 +1,4 @@
-FROM openshift3/jenkins-agent-maven-35-rhel7:latest
+FROM registry.access.redhat.com/openshift3/jenkins-agent-maven-35-rhel7:latest
 USER root
 RUN yum-config-manager --enable rhel-7-server-extras-rpms && \
     yum -y install skopeo && \
